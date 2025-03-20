@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Dancing+Script:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    font-family: 'Pixelify Sans', sans-serif;
+    @apply antialiased bg-background text-foreground;
+  }
+}
+
+/* Chibi sticker styles */
+.chibi-sticker {
+  position: fixed;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+  user-select: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sticker-1 {
+  bottom: 20px;
+  right: 20px;
+  transform: rotate(5deg);
+}
+
+.sticker-2 {
+  top: 100px;
+  left: 20px;
+  transform: rotate(-5deg);
+}
+
+.sticker-3 {
+  bottom: 150px;
+  right: 60px;
+  transform: rotate(8deg);
+}
+
+.sticker-4 {
+  top: 150px;
+  right: 30px;
+  transform: rotate(-8deg);
+}
+
+.sticker-5 {
+  bottom: 80px;
+  left: 40px;
+  transform: rotate(10deg);
+}
